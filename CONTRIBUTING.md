@@ -6,17 +6,14 @@ like you that make Active Admin such a great tool.
 ### 1. Where do I go from here?
 
 If you've noticed a bug or have a question that doesn't belong on the
-[mailing list](http://groups.google.com/group/activeadmin) or
-[Stack Overflow](http://stackoverflow.com/questions/tagged/activeadmin),
-[search the issue tracker](https://github.com/activeadmin/activeadmin/issues?q=something)
-to see if someone else in the community has already created a ticket.
-If not, go ahead and [make one](https://github.com/activeadmin/activeadmin/issues/new)!
+[mailing list][] or [Stack Overflow][], [search the issue tracker][] to see if
+someone else in the community has already created a ticket. If not, go ahead and
+[make one][new issue]!
 
 ### 2. Fork & create a branch
 
-If this is something you think you can fix, then
-[fork Active Admin](https://help.github.com/articles/fork-a-repo)
-and create a branch with a descriptive name.
+If this is something you think you can fix, then [fork Active Admin][] and
+create a branch with a descriptive name.
 
 A good branch name would be (where issue #325 is the ticket you're working on):
 
@@ -59,25 +56,22 @@ rm -rf spec/rails && bundle update
 
 ### 4. Did you find a bug?
 
-* **Ensure the bug was not already reported** by [searching all
-  issues](https://github.com/activeadmin/activeadmin/issues?q=).
+* **Ensure the bug was not already reported** by [searching all issues][].
 
-* If you're unable to find an open issue addressing the problem, [open a new
-  one](https://github.com/activeadmin/activeadmin/issues/new).  Be sure to
-  include a **title and clear description**, as much relevant information as
-  possible, and a **code sample** or an **executable test case** demonstrating
-  the expected behavior that is not occurring.
+* If you're unable to find an open issue addressing the problem,
+  [open a new one][new issue]. Be sure to include a **title and clear
+  description**, as much relevant information as possible, and a **code sample**
+  or an **executable test case** demonstrating the expected behavior that is not
+  occurring.
 
-* If possible, use the relevant bug report templates to create the issue.
-  Simply copy the content of the appropriate template into a .rb file, make the
+* If possible, use our [bug report template][] to create the issue. Simply
+  copy the content of the appropriate template into a .rb file, make the
   necessary changes to demonstrate the issue, and **paste the content into the
-  issue description**:
-  * [**ActiveAdmin** master
-    issues](https://github.com/activeadmin/activeadmin/blob/master/lib/bug_report_templates/active_admin_master.rb)
+  issue description**.
 
 ### 5. Implement your fix or feature
 
-At this point, you're ready to make your changes! Feel free to ask for help;
+At this point, you're ready to make your changes. Feel free to ask for help,
 everyone is a beginner at first :smile_cat:
 
 ### 6. View your changes in a Rails application
@@ -124,7 +118,7 @@ git checkout master
 git pull upstream master
 ```
 
-Then update your feature branch from your local copy of master, and push it!
+Then update your feature branch from your local copy of master, and push it.
 
 ```sh
 git checkout 325-add-japanese-translations
@@ -137,21 +131,19 @@ Finally, go to GitHub and
 :D
 
 Travis CI will run our test suite against all supported Rails versions. We care
-about quality, so your PR won't be merged until all tests pass. It's unlikely,
+about quality, so your PR won't be merged until all tests pass. It's unlikely
 but it's possible that your changes pass tests in one Rails version but fail in
 another. In that case, you'll have to setup your development environment (as
 explained in step 3) to use the problematic Rails version, and investigate
 what's going on!
 
-### 8. Keeping your Pull Request updated
+### 9. Keeping your Pull Request updated
 
 If a maintainer asks you to "rebase" your PR, they're saying that a lot of code
 has changed, and that you need to update your branch so it's easier to merge.
 
-To learn more about rebasing in Git, there are a lot of
-[good](http://git-scm.com/book/en/Git-Branching-Rebasing)
-[resources](https://help.github.com/articles/interactive-rebase),
-but here's the suggested workflow:
+To learn more about rebasing in Git, there are a lot of [good][git rebasing]
+[resources][interactive rebase] but here's the suggested workflow:
 
 ```sh
 git checkout 325-add-japanese-translations
@@ -190,3 +182,14 @@ Maintainers need to do the following to push out a release:
   ```
 
 * `bundle exec rake release`
+
+[mailing list]: http://groups.google.com/group/activeadmin
+[Stack Overflow]: http://stackoverflow.com/questions/tagged/activeadmin
+[search the issue tracker]: https://github.com/activeadmin/activeadmin/issues?q=something
+[new issue]: https://github.com/activeadmin/activeadmin/issues/new
+[fork Active Admin]: https://help.github.com/articles/fork-a-repo
+[searching all issues]: https://github.com/activeadmin/activeadmin/issues?q=
+[bug report template]: https://github.com/activeadmin/activeadmin/blob/master/lib/bug_report_templates/active_admin_master.rb
+[Codeclimate's CLI]: https://github.com/codeclimate/codeclimate
+[git rebasing]: http://git-scm.com/book/en/Git-Branching-Rebasing
+[interactive rebase]: https://help.github.com/articles/interactive-rebase
