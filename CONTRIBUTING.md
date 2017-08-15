@@ -107,7 +107,14 @@ Or to migrate the database:
 bundle exec rake local db:migrate
 ```
 
-### 7. Make a Pull Request
+### 7. Get the style right
+
+Your patch should follow the same conventions & pass the same code quality check
+as the rest of the project. [Codeclimate][codeclimate] will give you feedback in
+this regard. You can check & fix codeclimate's feedback by running it locally
+using [Codeclimate's CLI][], via `codeclimate analyze`.
+
+### 8. Make a Pull Request
 
 At this point, you should switch back to your master branch and make sure it's
 up to date with Active Admin's master branch:
@@ -151,7 +158,7 @@ git pull --rebase upstream master
 git push --force-with-lease 325-add-japanese-translations
 ```
 
-### 9. Merging a PR (maintainers only)
+### 10. Merging a PR (maintainers only)
 
 A PR can only be merged into master by a maintainer if:
 
@@ -164,7 +171,7 @@ A PR can only be merged into master by a maintainer if:
 Any maintainer is allowed to merge a PR if all of these conditions are
 met.
 
-### 10. Shipping a release (maintainers only)
+### 11. Shipping a release (maintainers only)
 
 Maintainers need to do the following to push out a release:
 
